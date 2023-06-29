@@ -1,0 +1,88 @@
+/******************* Configurações Base *********************/
+
+:root {
+	--background: #f4f6f8;
+	--white: #fff;
+	--black: #0a0a0a;
+	--gray: #c0c0c0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--background);
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+/************************* Header **************************/
+
+header {
+	background: var(--white);
+	border-bottom: 1px solid var(--gray);
+
+	padding: 1rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+header a,
+nav ul li a {
+	color: var(--black);
+}
+
+nav a::after {
+	content: "";
+	display: block;
+	height: 2px;
+	background: var(--black);
+	width: 0%;
+	transition: all ease-in-out 200ms;
+}
+
+nav a:hover::after {
+	width: 100%;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+	margin-right: 1rem;
+}
+
+@media (max-width: 450px) {
+	header {
+		display: block;
+		text-align: center;
+	}
+
+	header h1 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	nav{
+		display: flex;
+		justify-content: center;
+	}
+}
+
+/********************** Footer ************************/
+
+footer{
+	background: var(--white);
+	text-align: center;
+	padding: 1.2rem;
+}
+
+/********************** Footer ************************/
