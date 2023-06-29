@@ -14,10 +14,10 @@
         <h1><a href="/index.php">1 Blog</a></h1>
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Artigos</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="/index.php">Home</a></li>
+                <li><a href="artigos.php">Artigos</a></li>
+                <li><a href="sobre.php">Sobre</a></li>
+                <li><a href="contato.php">Contato</a></li>
             </ul>
         </nav>
     </header>
