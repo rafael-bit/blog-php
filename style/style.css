@@ -71,7 +71,7 @@ nav ul li {
 		margin-bottom: 1rem;
 	}
 
-	nav{
+	nav {
 		display: flex;
 		justify-content: center;
 	}
@@ -79,7 +79,7 @@ nav ul li {
 
 /********************** Footer ************************/
 
-footer{
+footer {
 	background: var(--white);
 	text-align: center;
 	padding: 1.2rem;
@@ -105,4 +105,46 @@ footer{
 .sobre__content h1 {
 	text-align: center;
 	margin-bottom: 20px;
+}
+
+/********************** Contato ************************/
+
+.contato__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 3rem 0rem;
+	width: 100%;
+}
+
+.contato__content {
+	background: var(--white);
+	border-radius: 20px;
+	width: 70%;
+	padding: 3.5rem;
+}
+
+.contato__content h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.contato__content span {
+	display: flex;
+	align-items: center;
+	font-size: 2rem;
+	margin-right: 2rem;
+}
+
+.contato__content span p {
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	font-size: 1rem;
+}
+
+.contato__info{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
 }
