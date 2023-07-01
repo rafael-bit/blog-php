@@ -10,6 +10,8 @@
                     <span class="material-symbols-outlined">call <p>(11)99999-8888</p></span>
                     <span class="material-symbols-outlined">mail <p>contato@1blog.com</p></span>
                 </div>
+                <pre>ou</pre>
+                <a href="mailto:contato@1blog.com?">Clique aqui</a>
             </div>
         </div>
     </main>
