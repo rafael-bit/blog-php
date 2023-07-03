@@ -103,8 +103,9 @@ $posts = [
     ],
     [
         'id' => 11,
-        'titulo' => 'O poder da meditação para o bem-estar',
+        'titulo' => 'PHP e suas funções',
         'conteudo' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae mauris est. Sed dignissim neque a mi semper, eget bibendum eros malesuada. Mauris efficitur lacus mauris, non congue turpis pharetra eget. Proin ullamcorper augue ut dapibus gravida. In hac habitasse platea dictumst. Mauris venenatis eros in nunc auctor, eget vulputate est tristique. Aliquam sed sapien a metus egestas mattis ut a metus. Vivamus vel pellentesque est, id scelerisque ante. Nunc in ultrices ex. Sed faucibus arcu a mauris suscipit, ac hendrerit mi ullamcorper. Mauris fringilla, velit nec gravida fringilla, diam metus congue arcu, in semper lectus mi nec nulla. Quisque consequat, dolor ut porttitor lacinia, neque sem porta lectus, sed rutrum ante nisi nec diam. Aenean consectetur, tellus ut finibus semper, turpis nisi vestibulum mi, eget consectetur erat nunc ac orci.',
+        'img' => './img/img1.png',
         'autor' => [
             'nome' => 'Gabriel Torres',
             'foto' => 'caminho/para/foto/gabrieltorres.jpg'

@@ -175,4 +175,30 @@ footer {
 	.contato__content{
 		padding: 1rem;
 	}
-}	
+}
+
+/********************** Home ************************/
+
+.container__home header{
+	background: var(--white);
+	display: block;
+	text-align: center;
+}
+
+.content{
+	width: 60%;
+	margin: 3rem;
+}
+
+.content img{
+	background: var(--background);
+	width: 100%;
+}
+
+.container__home h1, h2{
+	margin-bottom: 1rem;
+}
+
+.final{
+	text-align: end;
+}
