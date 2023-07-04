@@ -19,6 +19,16 @@
                 <article>
                     <h2>Tag</h2>
                     <ul>
+                        <?php $tagCounts = array_count_values(array_column($posts, 'tag'));
+                            foreach($posts as $post):
+                                if($tagCounts[$post['tag']] === 1): ?>
+                                    <li><a href="<?= $post['tag'] ?>.php"><?= $post['tag'] ?></a></li>
+                                <?php endif;
+                            endforeach;
+                        ?>
+                    </ul>
+                    <h2>Categorias</h2>
+                    <ul>
                         <?php $catCounts = array_count_values(array_column($posts, 'categoria'));
                             foreach($posts as $post):
                                 if($catCounts[$post['categoria']] === 1): ?>
@@ -27,7 +37,6 @@
                             endforeach;
                         ?>
                     </ul>
-                    <h2>Categorias</h2>
                 </article>
             </div>
     </main>

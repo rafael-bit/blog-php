@@ -171,51 +171,78 @@ footer {
 	font-size: .9rem;
 }
 
-@media(max-width: 460px){
-	.contato__content{
+@media(max-width: 460px) {
+	.contato__content {
 		padding: 1rem;
 	}
 }
 
 /********************** Home ************************/
 
-.home{
+.home {
 	display: flex;
 }
 
-.container header{
+.container header {
 	background: var(--white);
 	display: block;
 	text-align: center;
 }
 
-.content{
+.content {
 	background: var(--white);
-	width: 	80%;
+	width: 80%;
 	padding: 3rem;
 	border-right: 1px solid var(--gray);
 }
 
-.content img{
+.content img {
 	width: 100%;
 }
 
-.container h1, h2{
+.container h1,
+h2 {
 	margin-bottom: 1rem;
 }
 
-.final{
+.final {
 	text-align: end;
 }
 
-article{
+article {
 	width: 20%;
+	text-align: center;
 }
 
-article h2{
+article h2 {
 	padding: .5rem;
 	margin: 0;
-	text-align: center;
 	background: var(--black);
 	color: var(--white);
+}
+
+article a {
+	color: var(--black);
+}
+
+article a:hover {
+	text-decoration: underline;
+}
+
+article ul {
+	padding: 1rem;
+}
+
+article ul li{
+	margin-bottom: .5rem;
+}
+
+@media(max-width: 670px){
+	.content{
+		width: 100%;
+	}
+
+	article{
+		display: none;
+	}
 }
