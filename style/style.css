@@ -179,26 +179,43 @@ footer {
 
 /********************** Home ************************/
 
-.container__home header{
+.home{
+	display: flex;
+}
+
+.container header{
 	background: var(--white);
 	display: block;
 	text-align: center;
 }
 
 .content{
-	width: 60%;
-	margin: 3rem;
+	background: var(--white);
+	width: 	80%;
+	padding: 3rem;
+	border-right: 1px solid var(--gray);
 }
 
 .content img{
-	background: var(--background);
 	width: 100%;
 }
 
-.container__home h1, h2{
+.container h1, h2{
 	margin-bottom: 1rem;
 }
 
 .final{
 	text-align: end;
+}
+
+article{
+	width: 20%;
+}
+
+article h2{
+	padding: .5rem;
+	margin: 0;
+	text-align: center;
+	background: var(--black);
+	color: var(--white);
 }
