@@ -3,8 +3,16 @@
 ?>
     <?php include_once("templates/header.php");?>
     <main>
-        <?php foreach($posts as $post): ?>
-            <li><a href="<?= $post['title'] ?>.php"><?= $post['title'] ?></a></li>
-        <?php endforeach; ?>
+        <ul>
+            <?php foreach ($posts as $post): ?>
+                <li>
+                    <div class="artigos__cards">
+                        <img src="<?= $post['img'] ?>" alt="Foto do arigo">
+                        <h3><a href="<?= $post['titulo'] ?>.php"><?= $post['titulo'] ?></a></h3>
+                    </div>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+
     </main>
     <?php include_once("templates/footer.php");?>
