@@ -1,0 +1,283 @@
+/******************* Configurações Base *********************/
+
+:root {
+	--background: #f4f6f8;
+	--white: #fff;
+	--black: #0a0a0a;
+	--gray: #c0c0c0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--background);
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+/************************* Header **************************/
+
+header {
+	background: var(--white);
+	border-bottom: 1px solid var(--gray);
+
+	padding: 1rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+header a,
+nav ul li a {
+	color: var(--black);
+}
+
+nav a::after {
+	content: "";
+	display: block;
+	height: 2px;
+	background: var(--black);
+	width: 0%;
+	transition: all ease-in-out 200ms;
+}
+
+nav a:hover::after {
+	width: 100%;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+	margin-right: 1rem;
+}
+
+@media (max-width: 450px) {
+	header {
+		display: block;
+		text-align: center;
+	}
+
+	header h1 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	nav {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+/********************** Footer ************************/
+
+footer {
+	background: var(--white);
+	text-align: center;
+	padding: 1.2rem;
+}
+
+/********************** Sobre ************************/
+
+.sobre__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 3rem 0rem;
+	width: 100%;
+}
+
+.sobre__content {
+	background: var(--white);
+	border-radius: 20px;
+	width: 70%;
+	padding: 3.5rem;
+}
+
+.sobre__content h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/********************** Contato ************************/
+
+.contato__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5.5rem 0rem;
+	width: 100%;
+}
+
+.contato__content {
+	background: var(--white);
+	border-radius: 20px;
+	width: 60%;
+	padding: 3rem;
+	text-align: center;
+}
+
+.contato__content h1 {
+	font-size: 1.5rem;
+	margin-bottom: 5rem;
+}
+
+.contato__content pre {
+	margin: 2.5rem 0rem 5rem 0rem;
+}
+
+.contato__content a {
+	color: var(--black);
+	padding: .5rem;
+	border: 1px solid var(--black);
+	border-radius: 30px;
+	font-size: .8rem;
+	margin: 3rem;
+}
+
+.contato__content a:hover {
+	color: var(--white);
+	background: var(--black);
+	transition: 500ms;
+}
+
+.contato__info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.contato__info span {
+	display: flex;
+	align-items: center;
+	font-size: 1.5rem;
+	padding: 1rem;
+	margin: 0rem .5rem;
+}
+
+.contato__info span p {
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	padding: 1rem;
+	font-size: .9rem;
+}
+
+@media(max-width: 460px) {
+	.contato__content {
+		padding: 1rem;
+	}
+}
+
+/********************** Home ************************/
+
+.home {
+	display: flex;
+}
+
+.container header {
+	background: var(--white);
+	display: block;
+	text-align: center;
+}
+
+.content {
+	background: var(--white);
+	width: 80%;
+	padding: 3rem;
+	border-right: 1px solid var(--gray);
+}
+
+.content img {
+	width: 100%;
+}
+
+.container h1,
+h2 {
+	margin-bottom: 1rem;
+}
+
+.final {
+	text-align: end;
+}
+
+article {
+	width: 20%;
+	text-align: center;
+}
+
+article h2 {
+	padding: .5rem;
+	margin: 0;
+	background: var(--black);
+	color: var(--white);
+}
+
+article a {
+	color: var(--black);
+}
+
+article a:hover {
+	text-decoration: underline;
+}
+
+article ul {
+	padding: 1rem;
+}
+
+article ul li {
+	margin-bottom: .5rem;
+}
+
+@media(max-width: 670px) {
+	.content {
+		width: 100%;
+	}
+
+	article {
+		display: none;
+	}
+}
+
+.artigos__grid {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+}
+
+.artigos__item {
+	margin: 0;
+}
+
+.artigos__cards {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: center;
+}
+
+.artigos__cards img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.artigos__cards h3 {
+	margin: 0;
+}
+
+.img__post{
+	width: 50%;
+}
+
+.artigo__detalhes{
+	width: 100vw	;
+}
