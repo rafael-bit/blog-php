@@ -15,9 +15,9 @@ if (isset($_GET['id'])) {
         include_once("templates/header.php");
         ?>
 
-        <main>
+        <main class="posts">
+            <h2 class="artigo__h2"><?= $artigo['titulo'] ?></h2>
             <div class="artigo__detalhes">
-                <h2><?= $artigo['titulo'] ?></h2>
                 <img src="<?= $artigo['img'] ?>" class="img__post" alt="Foto do artigo">
                 <p><?= $artigo['conteudo'] ?></p>
             </div>

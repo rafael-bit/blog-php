@@ -278,6 +278,23 @@ article ul li {
 	width: 50%;
 }
 
+.posts{
+	height: 82vh;
+}
+
 .artigo__detalhes{
-	width: 100vw	;
+	display: flex;
+	align-items: center;
+	line-height: 1.5rem;
+	text-align: justify;
+	margin: 0rem 1rem 0rem 1rem;
+}
+
+.artigo__detalhes p{
+	margin:  0rem 2rem;
+}
+
+.artigo__h2{
+	padding: 1rem 0rem 1.5rem 0rem;
+	text-align: center;
 }
